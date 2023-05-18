@@ -650,9 +650,20 @@ a {
 .section-container {
   padding-bottom: 120px;
 }
+@media screen and (max-width: 1199px) {
+  .section-container {
+    display: none;
+  }
+}
 
 .address-nav {
   margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .address-nav {
+    display: none;
+  }
 }
 
 .social-list-link {
