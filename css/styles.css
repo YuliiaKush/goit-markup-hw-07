@@ -370,6 +370,7 @@ a {
   color: var(--title-text-color);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   background-color: var(--second-white-color);
@@ -715,6 +716,7 @@ a {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
 }
