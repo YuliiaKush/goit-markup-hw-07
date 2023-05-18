@@ -344,8 +344,18 @@ a {
   text-transform: capitalize;
 }
 .section-team {
-  padding: 120px 0;
+  padding: 72px 0;
   background-color: var(--white-footer-color);
+}
+@media screen and (min-width: 768px) {
+  .media {
+    padding: 96px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .media {
+    padding: 120px 0;
+  }
 }
 
 .workers-title {
