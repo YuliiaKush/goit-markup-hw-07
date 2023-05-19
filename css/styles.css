@@ -712,8 +712,17 @@ img {
   margin-left: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu-open-icon {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .address-nav {
+    display: none;
+  }
+  .site-nav {
     display: none;
   }
 }
