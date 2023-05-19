@@ -108,6 +108,7 @@ img {
   display: flex;
   align-items: center;
 }
+
 .link-logo {
   display: inline-block;
   color: var(--blue-color);
@@ -617,16 +618,17 @@ img {
   transform: translateY(0%);
 }
 
-.advantages-item,
-.workers-title {
+.advantages-item {
   width: calc((100% - 72px) / 4);
 }
 
 .secondary-title {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
+/*
 @media screen and (min-width: 768px) {
   .secondary-title {
     display: flex;
@@ -636,6 +638,7 @@ img {
     width: calc((100%-24px) / 2);
   }
 }
+*/
 
 .portfolio-title {
   display: flex;
@@ -818,6 +821,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .section-customers {
