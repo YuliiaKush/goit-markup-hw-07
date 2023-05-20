@@ -1236,6 +1236,10 @@ input[type="checkbox"]:checked + .icon-modal {
 .mobile-text {
   margin-bottom: 40px;
 }
+.mobile-text:hover,
+.mobile-text:focus {
+  color: var(--background-button);
+}
 .mobile-tel {
   font-family: "Roboto", sans-serif;
   font-style: normal;
