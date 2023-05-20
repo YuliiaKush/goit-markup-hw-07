@@ -118,6 +118,7 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-left: auto;
 }
 .logo-text {
   color: var(--primary-text-color);
@@ -136,6 +137,12 @@ img {
 .auth-nav {
   display: flex;
   gap: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .auth-nav {
+    display: none;
+  }
 }
 
 .adress-item {
@@ -160,6 +167,13 @@ img {
   display: flex;
   margin-left: 76px;
 }
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
 .site-nav .link {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
@@ -781,17 +795,8 @@ img {
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px) {
-  .mobile-menu-open-icon {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .address-nav {
-    display: none;
-  }
-  .site-nav {
     display: none;
   }
 }
@@ -1145,4 +1150,71 @@ input[type="checkbox"]:checked + .icon-modal {
 .privecy-href {
   text-decoration: underline;
   color: var(--blue-color);
+}
+
+/*Modal menu*/
+
+.menu-toggle {
+  min-height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
 }
