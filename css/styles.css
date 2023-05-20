@@ -366,17 +366,12 @@ img {
 }
 
 .section-team {
-  padding: 72px 0;
+  padding: 96px 0;
   background-color: var(--white-footer-color);
 }
 
-@media screen and (min-width: 768px) {
-  .media {
-    padding: 96px 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .media {
+@media screen and (min-width: 1158px) {
+  .section-team {
     padding: 120px 0;
   }
 }
@@ -658,6 +653,7 @@ img {
 @media screen and (min-width: 768px) {
   .secondary-title {
     gap: 24px;
+    row-gap: 72px;
   }
 }
 
@@ -709,6 +705,7 @@ img {
 @media screen and (min-width: 768px) {
   .workers-group {
     gap: 24px;
+    row-gap: 64px;
   }
 }
 
@@ -876,17 +873,26 @@ img {
   justify-content: center;
   gap: 16px;
   flex-wrap: wrap;
+  row-gap: 72px;
 }
 
 @media screen and (min-width: 768px) {
   .customers-list {
     gap: 24px;
+    row-gap: 72px;
   }
 }
 
 .section-customers {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+  .section-customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .flex-portfolio {
