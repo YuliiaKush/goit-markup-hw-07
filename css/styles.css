@@ -136,8 +136,14 @@ img {
 }
 
 .auth-nav {
-  display: flex;
-  gap: 40px;
+  display: block;
+}
+
+@media screen and (min-width: 1158px) {
+  .auth-nav {
+    display: flex;
+    gap: 40px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -166,7 +172,13 @@ img {
 
 .site-nav {
   display: flex;
-  margin-left: 76px;
+  margin-left: 120px;
+}
+
+@media screen and (min-width: 1158px) {
+  .site-nav {
+    margin-left: 76px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1258,4 +1270,12 @@ input[type="checkbox"]:checked + .icon-modal {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+}
+
+.mobile-tel:focus {
+  color: var(--background-button);
+}
+
+.mobile-mail:focus {
+  color: var(--background-button);
 }
