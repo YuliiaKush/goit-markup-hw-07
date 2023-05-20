@@ -406,7 +406,7 @@ img {
   background-color: var(--second-white-color);
 }
 @media screen and (min-width: 1158px) {
-  .title {
+  .text {
     font-weight: 400;
   }
 }
@@ -652,24 +652,23 @@ img {
 
 @media screen and (min-width: 768px) {
   .secondary-title {
-    gap: 24px;
-    row-gap: 72px;
+    gap: 72px 24px;
   }
 }
 
 .advantages-item {
-  width: calc((100% - 18px) / 1);
+  width: 396px;
 }
 
 @media screen and (min-width: 768px) {
   .advantages-item {
-    width: calc((100% - 24px) / 2);
+    width: 356px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .advantages-item {
-    width: calc((100% - 72px) / 4);
+    width: 264px;
   }
 }
 
@@ -704,8 +703,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .workers-group {
-    gap: 24px;
-    row-gap: 64px;
+    gap: 64px 24px;
   }
 }
 
@@ -878,8 +876,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .customers-list {
-    gap: 24px;
-    row-gap: 72px;
+    gap: 72px 24px;
   }
 }
 
