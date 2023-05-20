@@ -120,6 +120,7 @@ img {
   text-transform: uppercase;
   margin-left: auto;
 }
+
 .logo-text {
   color: var(--primary-text-color);
   font-family: "Raleway", sans-serif;
@@ -718,6 +719,7 @@ img {
 .primary-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav.content {
@@ -1241,7 +1243,7 @@ input[type="checkbox"]:checked + .icon-modal {
   font-size: 36px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: var(--blue-color);
+  color: var(--title-text-color);
   margin-bottom: 40px;
 }
 
