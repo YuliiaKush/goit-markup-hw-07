@@ -57,7 +57,7 @@ a {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -272,7 +272,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-name.jpg);
+    url(../images/bg-img-mob@1x.png.jpg);
   padding: 112px 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -280,6 +280,26 @@ img {
   max-width: 1440px;
   height: 600px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 429px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-img-tab@1x.png.jpg);
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-img-desk@1x.png.jpg);
+  }
 }
 
 @media screen and (min-width: 1158px) {
