@@ -592,12 +592,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
-
-/*
-.footer-subscribe {
-  display: flex;
-}
-*/
 .subscribe-mail {
   border: 1px solid var(--second-white-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -613,6 +607,12 @@ img {
   margin-right: 24px;
   margin-bottom: 16px;
   color: var(--second-white-color);
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-mail {
+    width: 264px;
+  }
 }
 
 .social-media {
