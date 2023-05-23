@@ -900,8 +900,13 @@ img {
 }
 .social-list-mobile {
   display: flex;
-  justify-content: flex-start;
-  gap: 56px;
+  gap: 30px;
+}
+
+@media screen and (min-width: 428px) {
+  .social-list-mobile {
+    gap: 56px;
+  }
 }
 
 .employees-position {
@@ -1293,6 +1298,12 @@ input[type="checkbox"]:checked + .icon-modal {
 
 .mobile-text {
   margin-bottom: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 }
 .text-mobile-menu {
   color: var(--background-button);
