@@ -413,6 +413,16 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
 }
+.title-text-portfolio {
+  margin-bottom: 8px;
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
+}
 
 .title-text-advantages {
   margin-bottom: 8px;
@@ -1311,6 +1321,11 @@ input[type="checkbox"]:checked + .icon-modal {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-bottom: 40px;
+}
+
+.mobile-text-menu {
+  margin-bottom: 40px;
 }
 .text-mobile-menu {
   color: var(--background-button);
